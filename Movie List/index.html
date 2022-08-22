@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "The movies I have watched and those that I have listed for later">
+
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="blank_top"></div>
+
+    <div class="top_group">
+
+    <img src="images/logo.png" alt="logo" id="img">
+
+    <h1 id="heading">MOVIE <br> WATCHLIST</h1>
+
+    </div>
+
+    <form name="form" class="form" method="POST">
+
+        <table>
+            <tr>
+                <td id="Movie_name">Movie Name</td>
+                <td colspan="2"><input type="text" name="movieName" required></td>
+            </tr>
+            
+            <tr>
+                <td id="y_n">Have you watched this movie?</td>
+                <td><input type="radio" name="yes/no" id="ra1">Yes</td>
+                <td><input type="radio" name="yes/no" id="ra2">No</td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" name="submit" value="Submit" onclick="submitValidation(); return false "></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <div class="video_div">
+
+    <video controls id="video" poster="videos/thumbnail.jpg">
+        <source src="videos/Avatar_ The Way of Water _ Official Teaser Trailer.mp4">
+    </video>
+    
+    </div>
+
+    <p class="bottom">To refer more movies go to
+        <a href="https://www.imdb.com/" target="_blank" class="imdb"> 
+        IMDB</
+        </a>
+    </p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
