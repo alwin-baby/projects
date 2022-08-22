@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="images/download.jpg">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<center>
+
+<body>
+
+    <div id="top">
+        <h1>Sign Up for Free</h1>
+    </div>
+
+    <form name="form" id="form" method="GET">
+
+        <table id="table">
+            <tr>
+                <td colspan="2" id="star">* Marked fields are mandatory</td>
+            </tr>
+
+            <tr>
+                <td><input type="text" class="name" name="firstName" required placeholder=" First Name*"></td>
+                <td><input type="text" class="name" name="lastName" required placeholder=" Last Name*"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input id="email" type="email" name="email" required placeholder=" E-mail*"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input class="pw" type="password" name="pw" required placeholder=" Set a Password*"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input class="pw" type="password" name="pwCheck" required placeholder=" Re-enter your Password*"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input id="submit" type="submit" name="submit" value="GET STARTED" onclick="submitValidation(); return false"></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</center>
+
+</html>
